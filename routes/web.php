@@ -18,7 +18,15 @@ Route::get('/', function () {
 });
 
 Route::get('/contacts', function () {
-    return view('contacts');
+    $contattiAzienda = [
+        'nome' => 'Azienda nuova',
+        'email' => 'aiuwfhawu@isufgih.com',
+        'indirizzo' => 'Via città 77',
+        'città' => 'Milano',
+        'telefono' => '+3903435546768'
+    ];
+
+    return view('contacts', $contattiAzienda);
 });
 
 Route::get('/about-us', function () {

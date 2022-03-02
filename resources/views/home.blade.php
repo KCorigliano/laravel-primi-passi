@@ -11,6 +11,7 @@
 <body class="bg-secondary">
     <header>
         <div class="d-flex justify-content-center py-2 bg-primary">
+            <h3 class="mx-4"><a class="text-light" href="/">Home</a></h3>
             <h3 class="mx-4"><a class="text-light" href="contacts">Contacts</a></h3>
             <h3 class="mx-4"><a class="text-light" href="about-us">About us</a></h3>
             <h3 class="mx-4"><a class="text-light" href="info">Info</a></h3>
