@@ -29,14 +29,13 @@ Route::get('/contacts', function () {
     return view('contacts', $contattiAzienda);
 });
 
-Route::get('/about-us', function () {
-    return view('about_us');
-});
-
-Route::get('/info', function () {
-    return view('info');
-});
-
 Route::get('/team', function () {
-    return view('team');
+    $team = [
+        'memb1' => 'Paolo Rossi',
+        'memb2' => 'Marco Verdi',
+        'memb3' => 'Giuseppe Gialli',
+        'memb4' => 'Lorenzo Bianchi',
+        'memb5' => 'Giovanni Rosa'
+    ];
+    return view('team', $team);
 });

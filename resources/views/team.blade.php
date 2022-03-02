@@ -2,11 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
-<body>
-    
+<body class="bg-secondary">
+    <header>
+        <div class="d-flex justify-content-center py-2 bg-primary">
+            <h3 class="mx-4"><a class="text-light" href="/">Home</a></h3>
+            <h3 class="mx-4"><a class="text-light" href="contacts">Contacts</a></h3>
+            <h3 class="mx-4"><a class="text-light" href="team">Team</a></h3>
+        </div>
+    </header>
+    <main>
+        <div class="row justify-content-center mt-4">
+            <div class="col-4 p-4 border border-dark">
+               <h3>Membri del team</h3>
+               <h5>{{$memb1}}</h5>
+               <h5>{{$memb2}}</h5>
+               <h5>{{$memb3}}</h5>
+               <h5>{{$memb4}}</h5>
+               <h5>{{$memb5}}</h5>
+               
+            </div>
+        </div>
+    </main>
 </body>
 </html>
