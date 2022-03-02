@@ -19,12 +19,9 @@
     <main>
         <div class="row justify-content-center mt-4">
             <div class="col-4 p-4 border border-dark">
-               <h3>{{$nome}}</h3>
-               <h3>Email: <span class="fs-5 fw-normal">{{$email}}</span></h3>
-               <h3>Indirizzo civico: <span class="fs-5 fw-normal">{{$indirizzo}}</span></h3>
-               <h3>Città: <span class="fs-5 fw-normal">{{$città}}</span></h3>
-               <h3>Telefono: <span class="fs-5 fw-normal">{{$telefono}}</span></h3>
-            </div>
+               @foreach ($azienda as $key => $item)
+                   <h5>{{$key}}: <span class="fs-5 fw-normal">{{$item}}</span></h5>
+               @endforeach
         </div>
     </main>
 </body>

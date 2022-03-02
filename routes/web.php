@@ -19,11 +19,13 @@ Route::get('/', function () {
 
 Route::get('/contacts', function () {
     $contattiAzienda = [
-        'nome' => 'Azienda nuova',
-        'email' => 'aiuwfhawu@isufgih.com',
-        'indirizzo' => 'Via città 77',
-        'città' => 'Milano',
-        'telefono' => '+3903435546768'
+        'azienda' => [
+        'Nome' => 'Azienda nuova',
+        'Email' => 'aiuwfhawu@isufgih.com',
+        'Indirizzo' => 'Via città 77',
+        'Città' => 'Milano',
+        'Telefono' => '+3903435546768'
+        ]
     ];
 
     return view('contacts', $contattiAzienda);
@@ -31,11 +33,13 @@ Route::get('/contacts', function () {
 
 Route::get('/team', function () {
     $team = [
+        'membri' => [
         'memb1' => 'Paolo Rossi',
         'memb2' => 'Marco Verdi',
         'memb3' => 'Giuseppe Gialli',
         'memb4' => 'Lorenzo Bianchi',
         'memb5' => 'Giovanni Rosa'
+        ]
     ];
     return view('team', $team);
 });

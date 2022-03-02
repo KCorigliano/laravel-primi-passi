@@ -20,12 +20,9 @@
         <div class="row justify-content-center mt-4">
             <div class="col-4 p-4 border border-dark">
                <h3>Membri del team</h3>
-               <h5>{{$memb1}}</h5>
-               <h5>{{$memb2}}</h5>
-               <h5>{{$memb3}}</h5>
-               <h5>{{$memb4}}</h5>
-               <h5>{{$memb5}}</h5>
-               
+               @foreach ($membri as $item)
+                   <h5>{{$item}}</h5>
+               @endforeach
             </div>
         </div>
     </main>
